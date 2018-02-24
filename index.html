@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <!--Main page for portofolio website-->
+        <title>Portfolio</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--best seen on firefox browser-->
+        
+        <!--stylesheet here-->
+        <link rel="stylesheet" type="text/css" href="../sheets/style.css"/>
+
+        <!--scripts here-->
+        <script src="../scripts/script.js"></script>
+        
+        <!--font-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    </head>
+    <body onload="initPortPage()">
+    <div id="div_whole_page">
+        <div id="div_top_mid_page">
+            <div id="div_top_page">
+                <div id="div_logo">
+                    <h2><a href="index.html">Emmanuel Talan</a>|</h2><h3>My Portfolio</h3></div>
+                
+                <div id="div_navigation">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="selected" href="index.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>                  
+                </div>
+                
+                <div id="div_mid_title">
+                    <h1>Collection of Side Projects</h1>
+                </div>
+                
+                <!--drop down menu that hovers on top-right of screen
+                    when user scrolls 200px down-->
+                <div class="dropdown_menu">
+                    <button id="dropBtn" onclick="dropdownFunction(); this.style.display='none'" class="dropBtn">
+                        <span class="menu_line"></span>
+                        <span class="menu_line"></span>
+                        <span class="menu_line"></span>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="index.html">Portfolio</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-container" id="div_mid_page">
+                
+<div id="leftMenu" class="leftMenu">
+    
+    <div class="menuBtn">
+	<button onclick="showSlides('webSlideshow');" style="padding:0;  height: 100%;">
+            <img src="../images/webImg.jpg" style="width:100%; height: auto;" alt="webApp button img" title="Allowance Tracker">
+            <span class="menuTxt">Allowance Tracker</span>
+    	</button>
+    </div>
+    <div class="menuBtn">
+    	<button onclick="showSlides('appSlideshow');" style="padding:0;  height:100%;">
+    		<img src="../images/appImg.jpeg" style="width:100%; height: auto;" alt="allowApp button img" title="AllowApp">
+            <span class="menuTxt">Allowance App</span>
+    	</button>
+    </div>
+    <div class="menuBtn">
+    	<button onclick="showSlides('dndSlideshow');" style="padding:0; height:100%;">
+    		<img src="../images/dndImg.jpeg" style="width:100%; height: auto;" alt="dnd button img" title="Deal or No Deal">
+            <span class="menuTxt">Deal or No Deal</span>
+    	</button>
+    </div>
+    <div class="menuBtn">
+    	<button onclick="showSlides('atmSlideshow');" style="padding:0;  height:100%;">
+    		<img src="../images/atmImg.jpeg" style="width:100%; height: auto;" alt="atm button img" title="ATM">
+            <span class="menuTxt">ATM</span>
+    	</button>
+    </div>
+    <div class="menuBtn">
+    	<button onclick="showSlides('tttSlideshow');" style="padding:0;  height:100%;">
+    		<img src="../images/tttImg.jpeg" style="width:100%; height: auto;" alt="ttt button img" title="Tic Tac Toe">
+            <span class="menuTxt">Tic Tac Toe</span>
+    	</button>
+    </div>
+    
+    <p id="coming_soon">coming soon...</p>
+    
+</div> <!-- LEFT MENU -->
+
+<div class="rightMenu">
+
+    <div class="slideShow" id="webSlideshow">
+        <div class="caption-container">
+            <h3>
+                <img class="icon" src="../images/allowance_proj_web/webI.png" alt="(piggy bank icon)">
+                Web Application: Allowance Tracker
+             </h3>            
+            <p id="caption" class="language">HTML5, CSS, JavaScript</p>
+            <p id="caption">A web application for tracking allowance $$$.</p>
+            <p id="caption"><a href="https://github.com/MrShanx/AllowanceTrackerWeb" target="_blank">View on GitHub</a></p>
+        </div>
+
+       <div class="mySlidesLong">
+          <div class="numbertext">1 / 5</div>
+          <img src="../images/allowance_proj_web/normal_view_large_thumbnail.png" style="">
+          <p>Transactions: Default View</p>
+       </div>
+
+       <div class="mySlidesLong">
+          <div class="numbertext">2 / 5</div>
+          <img src="../images/allowance_proj_web/add_allowance_large_thumbnail.png" style="">
+          <p>Add Allowance Menu</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="../images/allowance_proj_web/add_expense1_small_thumbnail.png" style="">
+          <p>Option 1: Adding Expense (Input Box)</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="../images/allowance_proj_web/add_expense2_small_thumbnail.png" style="">
+          <p>Option 2: Adding Expense (Button Click)</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="../images/allowance_proj_web/reset_view.png" style="">
+          <p>Reset Transactions View</p>
+       </div> 
+    </div> <!-- slideShow -->
+    
+    <div class="slideShow" id="appSlideshow">
+        <div class="caption-container">
+            <h3>
+                <img class="icon" src="../images/allowApp_proj/appI.png" alt="(wallet icon)">
+                Android Application: AllowApp
+            </h3>            
+            <p id="caption" class="language">Java (Android), XML Layout</p>
+            <p id="caption">An Android App for tracking allowance $$$.</p>
+            <p id="caption"><a href="https://github.com/MrShanx/AllowApp" target="_blank">View on GitHub</a></p>
+        </div>
+
+       <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="../images/allowApp_proj/icon_view.png" style="">
+          <p>Application Icon</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="../images/allowApp_proj/default_view.png" style="">
+          <p>Default View</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="../images/allowApp_proj/default_transactions_view.png" style="">
+          <p>Transactional Log View</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="../images/allowApp_proj/add_allowance&expense_view.png" style="">
+          <p>Add Transaction Menu</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="../images/allowApp_proj/error_view.png" style="">
+          <p>Invalid Transaction Error View</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="../images/allowApp_proj/reset_view.png" style="">
+          <p>Reset Transactions View</p>
+       </div>
+    </div> <!-- slideShow -->
+    
+    <div class="slideShow" id="dndSlideshow">
+        <div class="caption-container">
+            <h3>
+                <img class="icon" src="../images/dnd_proj/dndI.png" alt="(briefcase icon)">
+                Java Application: Deal or No Deal
+            </h3>            
+            <p id="caption" class="language">Java (Swing)</p>
+            <p id="caption">Java game application based on the popular tv show.</p>
+            <p id="caption"><a href="https://github.com/MrShanx/DealOrNoDeal" target="_blank">View on GitHub</a></p>
+        </div>
+
+       <div class="mySlides">
+          <div class="numbertext">1 / 10</div>
+          <img src="../images/dnd_proj/starting_view.png" style="">
+          <p>Starting Menu</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">2 / 10</div>
+          <img src="../images/dnd_proj/first_case.png" style="">
+          <p>First Pick Menu</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">3 / 10</div>
+          <img src="../images/dnd_proj/case_pick.png" style="">
+          <p>Case Picked: Notification Window</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 10</div>
+          <img src="../images/dnd_proj/high_value_pick.png" style="">
+          <p>High Value Picked: Notification Window</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">5 / 10</div>
+          <img src="../images/dnd_proj/banker_calls.png" style="">
+          <p>Banker Calls: Notification Window</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">6 / 10</div>
+          <img src="../images/dnd_proj/bankers_offer.png" style="">
+          <p>Banker's Offer Menu</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">7 / 10</div>
+          <img src="../images/dnd_proj/deal_accepted.png" style="">
+          <p>Deal Accepted: Notification Window</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">8 / 10</div>
+          <img src="../images/dnd_proj/deal_rejected.png"  style="">
+          <p>Deal Rejected: Notification Window</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">9 / 10</div>
+          <img src="../images/dnd_proj/winning_case.png"  style="">
+          <p>Winnings: Notification Window</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">10 / 10</div>
+          <img src="../images/dnd_proj/end_dialog.png" style="">
+          <p>Ending: Notification Window</p>
+       </div>
+    </div> <!-- slideShow -->
+    
+    <div class="slideShow" id="atmSlideshow">
+        <div class="caption-container">
+            <h3>
+                <img class="icon" src="../images/atm_proj/atmI.png" alt="(atm icon)">
+                Java Application: ATM
+            </h3>            
+            <p id="caption" class="language">Java (Swing, Derby Database), SQL</p>
+            <p id="caption">An Automated Teller Machine in GUI application form.</p>
+            <p id="caption"><a href="https://github.com/MrShanx/ATM" target="_blank">View on GitHub</a></p>           
+        </div>
+
+       <div class="mySlides">
+          <div class="numbertext">1 / 10</div>
+          <img src="../images/atm_proj/login.png" style="">
+          <p>Login Menu</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">2 / 10</div>
+          <img src="../images/atm_proj/welcome.png" style="">
+          <p>Welcome: Notification Window</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">3 / 10</div>
+          <img src="../images/atm_proj/main_menu.png" style="">
+          <p>Main Menu</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 10</div>
+          <img src="../images/atm_proj/check_balance.png" style="">
+          <p>Current Balance: Notification Window</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">5 / 10</div>
+          <img src="../images/atm_proj/amount_input.png" style="">
+          <p>Amount Input Window</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">6 / 10</div>
+          <img src="../images/atm_proj/confirmation_menu.png"  style="">
+          <p>Confirmation Window</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">7 / 10</div>
+          <img src="../images/atm_proj/error_message.png" style="">
+          <p>Error: Notification Window</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">8 / 10</div>
+          <img src="../images/atm_proj/balance_update.png" style="">
+          <p>New Balance: Notification Window</p>
+       </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">9 / 10</div>
+          <img src="../images/atm_proj/exit_menu.png" style="">
+          <p>Exit: Notification Window</p>
+       </div>
+        
+        <div class="mySlidesLong">
+          <div class="numbertext">10 / 10</div>
+          <img src="../images/atm_proj/db.png" style="">
+          <p>Accounts Table Data</p>
+       </div>
+    </div> <!-- slideShow -->
+    
+    <div class="slideShow" id="tttSlideshow">
+        <div class="caption-container">
+            <h3>
+                <img class="icon" src="../images/ttt_proj/tttI.png" alt="(tic-tac-toe icon)" style="width: 65px; height: 45px;">
+                Java Application: Tic Tac Toe
+            </h3>            
+            <p id="caption" class="language">Java (Swing)</p>
+            <p id="caption">Basic Tic Tac Toe game, no levels, no choice of character.</p>
+            <p id="caption"><a href="https://github.com/MrShanx/TicTacToe" target="_blank">View on GitHub</a></p>
+        </div>
+
+       <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="../images/ttt_proj/new_game.png" style="">
+          <p>Game Frame</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="../images/ttt_proj/in_game.png" style="">
+          <p>InGame Frame</p>
+       </div>
+
+       <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="../images/ttt_proj/draw.png" style="">
+          <p>Draw: Notification Window</p>
+       </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="../images/ttt_proj/loss.png" style="">
+          <p>Loss: Notification Window</p>
+        </div> 
+        
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="../images/ttt_proj/win.png"  style="">
+          <p>Win: Notification Window</p>
+       </div>
+    </div> <!-- slideShow -->
+    
+</div> <!-- RIGHT MENU -->  
+
+            </div> <!-- DIV MID PAGE -->
+        </div> <!-- TOP & MID PAGE -->
+
+            
+            <div id="div_bot_page">
+                <div id="div_linkTo">
+                    <a href="contact.html">Contact <img src="../images/forward.png" 
+                       alt="(forward icon)" height="15" width="15"/></a>
+                </div>
+                
+                <div id="div_footer">
+                    <div class="left_foot">
+                        <a href="https://www.linkedin.com/in/emmanueltalan" target="_blank"><img src="../images/linkedin.png" onmouseover="this.src='../images/linkedin_hover.png'" onmouseout="this.src='../images/linkedin.png'"
+                                        alt="(linkedin icon)" height="35" width="35" /></a>
+                        View my <a href="https://www.linkedin.com/in/emmanueltalan" target="_blank">LinkedIn profile</a>
+                    </div>    
+                    <div class="right_foot">
+                        <a href="https://github.com/mrshanx" target="_blank"><img src="../images/github.png" onmouseover="this.src='../images/github_hover.png'" onmouseout="this.src='../images/github.png'"
+                                        alt="(github icon src: https://www.iconfinder.com/abhishekpipalva)" 
+                                        height="35" width="35" /></a>
+                        View <a href="https://github.com/mrshanx" target="_blank">@MrShanx</a> on GitHub
+                    </div>
+                    <div class="copyright_foot">                    
+                        Copyright &copy; 
+                        <script type="text/javascript">
+                            var date_d = new Date();
+                            document.write(date_d.getFullYear());
+                        </script>    
+                        <a href="index.html">Emmanuel Talan</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="top_scroller" onclick="topFunction()" id="topBtn" title="Go to top"><i class="up"></i></button>
+                </div>
+            </div>            
+        </div>
+    </body>
+</html>
