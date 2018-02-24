@@ -1,0 +1,534 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-Jan-2018, 2:47:20 PM
+    Author     : DonBaws
+*/
+
+/*** CSS FOR WEBSITE **********************************************************/
+html {
+    position: relative;
+    min-height: 100%;
+    min-width: 280px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 160px 0; /** 100px height of bot **/
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+h3, h2 {  
+    display: inline-block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: #483d8b /*** light shade darkslateblue ***/
+}
+
+ul {
+    list-style: none;
+}
+
+#div_top_page {
+    /*background-color: #581845; purple original*/ 
+    background-color: #322a61; /***lightslateblue ***/
+    text-align: left;
+}
+
+#div_logo {
+    width: 48%;
+    float: left;
+    display: inline-block;
+    padding-left: 10%;
+}
+    #div_logo a {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+#div_navigation {
+    width: 48%;
+    text-align: right;
+    float: right;
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 10%;
+}
+    #div_navigation ul li{
+        display: inline-block;
+        height: 63px;
+    }
+        #div_navigation ul li a {
+            padding: 20px;
+            color: white;
+        }
+                #div_navigation a[href].selected, a.selected:active {
+                    background-color: #241e45; /*darker darkslateblue shade*/
+                }
+                
+#div_mid_title {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}                
+                
+#div_mid_page {
+    color: black;
+    width: 100%;
+    min-width: 280px;
+}
+
+    /*** FOR about.html emoticons ***/
+    .emoticon {
+        height: 35px;
+        width: 35px;
+    }
+    
+    /*** FOR contact.html email icon ***/
+    .email_container {
+        padding: 40px;
+    }
+    .email_container a{
+    }
+        .email_container a:hover, .email_container a:active{
+            background-color: white;
+            opacity: .6;
+        }
+    
+    /*** FOR about.html list ***/
+    #div_mid_list {
+        margin-left: 15px;
+        display: inline-block;
+        text-align: left;
+    }
+        #div_mid_list ul li p {
+            color: black;
+        }
+
+#div_bot_page{
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 160px; /*** same as body margin ***/
+    width: 100%;
+    overflow: hidden;
+}
+    /*** INNER BOT ***/
+    #div_linkTo {
+        /*background-color:  #581845; purple*/
+        background-color: #322a61;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 20px;
+        width: 100%;
+        line-height: 60px;  /**center text**/
+    }
+    
+        #div_linkTo a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+    #div_footer {
+        width: 100%;
+        background-color: #2f2a2d; /*** gray needed***/
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 62px;
+        line-height: 6px;  /**center text**/
+        font-size: 70%;    
+        color: #cccccc;
+        display:inline-block;
+    }
+    .social_img, .social_text {
+        display: inline-block;
+    }
+    
+    #div_footer img {
+        margin: 0 0px 0 10px;
+    }        
+        #div_footer a {
+            font-weight: bold;
+            margin: 0 0 0 0;
+        }
+    
+        #div_footer a:hover, #div_footer a:active {
+            background-color: #2f2a2d; /*** bot_page color gray NEEDED***/       
+            color: #6c63a2; /*** text color for links in footer ***/
+        }
+        
+/*** SET DEFAULT RESPONSIVENESS ***/
+/*** footer ***/
+    .left_foot, .right_foot {
+        width: 45%;
+        display: inline-block;
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+        .left_foot {
+            text-align: right;
+        }
+        .right_foot {
+            text-align: left;
+        }       
+
+/*** PORTFOLIO PAGE ***********************************************************/
+#webSlideshow, #appSlideshow, #dndSlideshow, #atmSlideshow, #tttSlideshow {
+    display: none;
+}
+#div_mid_page {
+    position: relative;
+}
+
+/*** .leftMenu left hand-side position *****************************************
+.leftMenu, .rightMenu {
+    display: inline-block;
+}
+.leftMenu {
+    background-color: white;
+    min-width: 150px;
+    position: absolute;     
+    
+    width: 15%;
+    height: 0%;
+    background-color: gray;
+    padding-bottom: 100%;
+    margin: 0%;
+    margin-top: 10%;
+    border-right: solid #2f2a2d 10px;
+        border-left: solid #2f2a2d 10px;
+
+}
+	.menuBtn {
+            display: inline-block;
+            width: 100px;
+            background-color: black;
+            display: inline-block;	
+        }   
+    
+.rightMenu {
+    min-width: 200px;
+    width: 85%;
+    margin: 0%;
+    margin-left: 15%;
+    border: solid #2f2a2d 10px;
+    border-left: none;
+}
+.slideShow {
+	padding-bottom: 3%;
+	background-color: gray;
+}
+
+.menuBtn {
+	position: relative;
+}
+/*.leftMenu left hand-side position end ***************************************/
+
+#div_mid_page {padding: 0; margin: 0;}
+            .leftMenu, .rightMenu {
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                text-align: center;
+                float: none;
+            }
+                .menuBtn button { /* size of button is auto to .menuBtn container */
+                    width: 100%;
+                    height: 100%;
+                }
+                .menuBtn { /* adjusts the size of the menu buttons */
+                    width: 10%;
+                    background-color: black;
+                    display: inline-block;	
+                }
+                .menuBtn img { /* auto size to fit menuBtn container */
+                    width: 100%; height: 100%;
+                }
+                .leftMenu p {display: block;}
+                /*** PROJECT CAPTIONS ***/
+                .language {font-style: italic;
+                            color: black;} /* project programming language text */
+                #caption a{ color: blue;} /* set project links to black (default white) */
+                     #caption a:hover, #caption a:active{ background-color: white;}
+                .caption-container { margin-bottom: 8%;}
+                /*** PROJECT CAPTIONS END********************************** ***/     
+                .mySlides { margin-bottom: 8%;}
+                    .mySlidesLong { margin-bottom: 8%;}
+                .numbertext { display: none;}
+                /*** Project Images end ***************************************/
+/*.leftMenu & .rightMenu end **************************************************/
+
+.menuTxt {
+    visibility: hidden;
+    position: absolute;
+    /*left: 0;*/
+    margin-left: -55%;
+    text-align: center;
+    top: 45%;
+    width: 100%;
+    color: black;
+    font-weight: 200;
+    
+     /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+}
+
+/***hover on portfolio menu img ***/
+.menuBtn button{ cursor: pointer; }
+.menuBtn:hover img { opacity: 0.5; }
+.menuBtn button:hover .menuTxt {
+    visibility: visible;
+    opacity: 1;
+}
+/*** PORTFOLIO PAGE END *******************************************************/
+
+/*** RESPONSIVE LOGO and NAV ***/
+        @media (max-width:1010px) {
+/*            header*/
+            #div_logo {
+                padding-left: 30px;
+            }
+            #div_navigation {
+                padding-top: 10px;
+                padding-right: 30px;
+            }
+            /*middle*/
+            .mySlidesLong img{ /*for all portfolio images that are long horizontally */
+                width: 80%;
+            }
+        }
+        @media (max-width:910px) {
+            /*header*/
+            #div_logo, #div_navigation {
+                padding: 0px 0;        
+            }
+            #div_navigation {
+                padding-top: 10px;
+            }
+            /*middle*/
+            .mySlides img{ /* for all images except long ones*/
+                width: 50%;
+            }
+        }
+        @media (max-width:750px) {
+            /*header*/
+            h1 {
+               font-size-adjust: .4;
+            } 
+            #div_logo, #div_navigation {
+                display: inline-block;
+                padding: 0;
+                width: 100%; /* width of Logo and Nav is 100% when viewport is
+                             800px or smaller */
+                text-align: center;
+                float: none;
+            }
+            #div_navigation {
+                margin-left: -20px;        
+            }
+/*            middle*/
+            .menuBtn {
+                width: 15%;
+            }
+            /*footer*/            
+            .left_foot, .right_foot {
+                padding: 0;
+                text-align: center;
+                width: 100%;
+            }
+            .left_foot {
+                margin-left: -10px;
+            }
+            .right_foot {
+                padding-bottom: 8px;
+            }
+            .copyright_foot {
+                margin-left: 15px;
+            }
+        }
+        @media (max-width:400px) {
+            /*header*/
+            body {
+                font-size-adjust: .5;
+            }
+            h1 {
+               font-size-adjust: .3;
+            }            
+            #div_logo, #div_navigation {
+                padding-bottom: 0;
+            }
+            #div_navigation ul li {
+                width: 100%;
+            }
+            #div_navigation ul li a {
+                padding-left: 40%;
+                padding-right: 40%;
+                text-align: center;
+            }            
+            /*middle*/
+            .mySlides img { /* for all images except long ones*/
+                width: 70%;
+            }
+            .menuBtn {
+                width: 18%;
+            }
+            /*middle of about.html*/
+            #div_mid_list {
+                margin: 0;
+                margin-left: -23px;
+            }
+            #div_footer {
+                font-size-adjust: .6;
+            }
+        }
+/*** RESPONSIVE LOGO and NAV **************************************************/
+
+* {box-sizing: border-box}
+#mySlides {display: none}
+img {vertical-align: middle;}
+
+/*** SCROLL TO TOP FUNCTIONALITY **********************************************/
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #999999;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+    #topBtn:hover {
+        background-color: #483d8b; /***lighter shade darkslateblue ***/
+        opacity: 1;
+    }
+    i {
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        opacity: 1;
+        color: white;
+    }    
+    .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+/*** SCROLL TO TOP FUNCTIONALITY **********************************************/
+    
+/*** DROP DOWN MENU ***********************************************************/
+/* Dropdown Button THREE LINES */
+.menu_line {
+    width: 30px;
+    height: 6px;
+    background-color: white;
+    margin: 5px 0px;
+    display: block;
+}
+ /* Dropdown Button */
+.dropBtn {
+    display: none;
+    background-color: #999999;
+    opacity: 0.5;
+    color: white;
+/*    padding: 16px;*/
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+}
+/* Dropdown button on hover & focus */
+.dropBtn:hover, .dropBtn:focus {
+    background-color: #483d8b; /***lighter shade darkslateblue ***/
+    opacity: 1;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown_menu {    
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    z-index: 99;
+    display: block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    background-color: #999999; /*** light gray ***/
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    opacity: 0.7; 
+    
+}   
+    .dropdown-content a:hover {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        opacity: 1;
+        background-color: #483d8b; /***lighter shade darkslateblue ***/
+    } 
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+.hide {display:none;}
+/*** DROP DOWN MENU ***********************************************************/
+
+/*STICKY MENU*/
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+#leftMenu {
+  overflow: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .rightMenu {
+  padding-top: 160px;
+}
+/*STICKY MENU END**************************************************************/
