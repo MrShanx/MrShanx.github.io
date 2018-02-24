@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--best seen on firefox browser-->
+        
+        <!--stylesheet here-->
+        <link rel="stylesheet" type="text/css" href="../sheets/style.css"/>
+
+        <!--scripts here-->   
+        <script src="../scripts/script.js"></script>
+
+        <!--font-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/> 
+    </head>
+    <body onload="initPage()">
+        <div id="div_whole_page">
+            <div id="div_top_mid_page">
+            <div id="div_top_page">
+                <div id="div_logo_nav">
+                    <div class="left" id="div_logo">
+                        <h2><a href="index.html">Emmanuel Talan</a>|</h2><h3>Developer</h3></div>
+                <div class="right" id="div_navigation">
+                    <ul>
+                        <li><a class="selected" href="about.html">About</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>                  
+                </div>
+                </div>
+                
+                <div id="div_mid_title">
+                    <h1>Here's what you should know</h1>
+                </div>
+                
+                <!--drop down menu that hovers on top-right of screen
+                    when user scrolls 200px down-->
+                <div class="dropdown_menu">
+                    <button id="dropBtn" onclick="dropdownFunction(); this.style.display='none'" class="dropBtn">
+                        <span class="menu_line"></span>
+                        <span class="menu_line"></span>
+                        <span class="menu_line"></span>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="index.html">Portfolio</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="div_mid_page">
+             <div id="div_mid_list">   
+                <ul>
+                    <li><p><img class="emoticon" src="../images/happy.png" alt="(smiley icon)"/>
+                             &nbsp; Coffee is key to my programs</p></li>
+                    <li><p><img class="emoticon" src="../images/happy.png" alt="(smiley icon)"/>
+                             &nbsp; I like learning new languages</p></li>
+                    <li><p><img class="emoticon" src="../images/happy.png" alt="(smiley icon)"/>
+                             &nbsp; I practice with: 
+                             <br/>&emsp;&emsp;&emsp; <i class="language">HTML, CSS, Javascript</i> for websites (like this one) and web apps
+                            <br/>&emsp;&emsp;&emsp; <i class="language">Java</i> for small projects with GUI
+                            <br/>&emsp;&emsp;&emsp; And <i class="language">Android Java</i> for mobile apps</p></li>                    
+                    <li><p><img class="emoticon" src="../images/sad.png" alt="(smiley icon)"/>                             
+                            &nbsp; I don't like to design                   
+                        </p></li>
+                </ul>
+             </div>
+            </div>
+            </div>
+            <div id="div_bot_page">
+                <div id="div_linkTo">
+                    <a href="index.html">Portfolio 
+                        <img src="../images/forward.png" alt="(forward icon)" height="15" width="15"/></a>
+                </div>
+                
+                <div id="div_footer">
+                    <div class="left_foot">
+                        <a href="https://www.linkedin.com/in/emmanueltalan" target="_blank"><img src="../images/linkedin.png" onmouseover="this.src='../images/linkedin_hover.png'" onmouseout="this.src='../images/linkedin.png'"
+                                        alt="(linkedin icon)" height="35" width="35" /></a>                        
+                        View my <a href="https://www.linkedin.com/in/emmanueltalan" target="_blank">LinkedIn profile</a>                      
+                    </div>    
+                    <div class="right_foot">                       
+                        <a href="https://github.com/mrshanx" target="_blank"><img src="../images/github.png" onmouseover="this.src='../images/github_hover.png'" onmouseout="this.src='../images/github.png'"
+                                        alt="(github icon src: https://www.iconfinder.com/abhishekpipalva)" 
+                                        height="35" width="35" /></a>
+                        View <a href="https://github.com/mrshanx" target="_blank">@MrShanx</a> on GitHub                                          
+                    </div>
+                    <div class="copyright_foot">                    
+                        Copyright &copy; 
+                        <script type="text/javascript">
+                            var date_d = new Date();
+                            document.write(date_d.getFullYear());
+                        </script>    
+                        <a href="index.html">Emmanuel Talan</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="top_scroller" onclick="topFunction()" id="topBtn" title="Go to top"><i class="up"></i></button>
+                </div>  
+            </div>            
+        </div>
+    </body>
+</html>
