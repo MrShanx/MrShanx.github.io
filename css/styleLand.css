@@ -114,7 +114,7 @@ a:hover {
     opacity: 1;
 }
 #github {
-    background: url(".../images/landing/githubLand.png");
+    background: url("../images/landing/githubLand.png");
     background-size:  90px 90px;
     background-repeat:  no-repeat;
 }
