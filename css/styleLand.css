@@ -23,7 +23,7 @@ html {
 }
     
 header {
-    background-image: url("../css/image/landing/coverImg.jpg");
+    background-image: url("../images/landing/coverImg.jpg");
     height: 125vh;
     background-size: cover;
     color: white;
@@ -77,15 +77,15 @@ a:hover {
     align-items: center;
 }
 #portfolio {
-    background: url("../css/image/landing/coverImg.jpg");
+    background: url("../images/landing/coverImg.jpg");
     background-size: 100%;
 }
 #about {
-    background: url("../css/image/landing/coverImg.jpg");
+    background: url("../images/landing/coverImg.jpg");
     background-size: 100%;
 }
 #contact {
-    background: url("../css/image/landing/coverImg.jpg");
+    background: url("../images/landing/coverImg.jpg");
     background-size: 100%;
 }
 
@@ -114,23 +114,23 @@ a:hover {
     opacity: 1;
 }
 #github {
-    background: url("../css/image/landing/githubLand.png");
+    background: url(".../images/landing/githubLand.png");
     background-size:  90px 90px;
     background-repeat:  no-repeat;
 }
 #github:hover {
-    background: url("../css/image/landing/github_hoverLand.png");
+    background: url("../images/landing/github_hoverLand.png");
     background-size:  90px 90px;
     background-repeat:  no-repeat;
 }
 
 #linkedin {
-    background: url("../css/image/landing/linkedinLand.png");
+    background: url("../images/landing/linkedinLand.png");
     background-size:  90px 90px;
     background-repeat:  no-repeat;
 }
 #linkedin:hover {
-    background: url("../css/image/landing/linkedin_hoverLand.png");
+    background: url("../images/landing/linkedin_hoverLand.png");
     background-size:  90px 90px;
     background-repeat: no-repeat;
 }
