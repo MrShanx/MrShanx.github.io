@@ -115,24 +115,30 @@ a:hover {
 }
 #github {
     background: url("../images/landing/githubLand.png");
-    background-size:  90px 90px;
+    background-size:  70px 70px;
     background-repeat:  no-repeat;
+    background-position-y: 20%;
 }
 #github:hover {
     background: url("../images/landing/github_hoverLand.png");
-    background-size:  90px 90px;
+    background-size:  70px 70px;
     background-repeat:  no-repeat;
+    background-position-y: 20%;
+
 }
 
 #linkedin {
     background: url("../images/landing/linkedinLand.png");
-    background-size:  90px 90px;
+    background-size:  70px 70px;
     background-repeat:  no-repeat;
+    background-position-y: 20%;
 }
 #linkedin:hover {
     background: url("../images/landing/linkedin_hoverLand.png");
-    background-size:  90px 90px;
+    background-size:  70px 70px;
     background-repeat: no-repeat;
+    background-position-y: 20%;
+
 }
 
 @media (max-width: 800px) {
