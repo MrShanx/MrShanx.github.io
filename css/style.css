@@ -299,10 +299,10 @@ ul {
 /***hover on portfolio menu img ***/
 .menuBtn button{ cursor: pointer; }
 .menuBtn:hover img { opacity: 0.5; }
-.menuBtn button:hover .menuTxt {
+/***.menuBtn button:hover .menuTxt {
     visibility: visible;
     opacity: 1;
-}
+}***/
 /*** PORTFOLIO PAGE END *******************************************************/
 
 /*** RESPONSIVE LOGO and NAV ***/
