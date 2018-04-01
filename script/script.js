@@ -110,8 +110,18 @@ function topFunction(num) {
 
 /*** SLIDESHOW JSCRIPT ********************************************************/
 function showSlides(className) {
+    var width1 = window.innerWidth;
+    var width2 = document.documentElement.clientWidth;
+    var width3 = document.body.clientWidth;
+
+    if(width1 < 401 || width2 < 401 || width3 < 401) {
+        topFunction(500);
+    }
+    else if(width1 < 751 || width2 < 751 || width < 751) {
+        topFunction(260);
+    } 
     //go back top first
-    topFunction(200);
+    else {topFunction(200);}
     
     //show slideshow with className
     var closeSlides = document.getElementsByClassName('slideShow');
