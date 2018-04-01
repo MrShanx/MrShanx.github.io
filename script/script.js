@@ -115,7 +115,7 @@ function showSlides(className) {
     var width3 = document.body.clientWidth;
 
     if(width1 < 401 || width2 < 401 || width3 < 401) {
-        topFunction(500);
+        topFunction(350);
     }
     else if(width1 < 751 || width2 < 751 || width3 < 751) {
         topFunction(260);
