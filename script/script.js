@@ -117,7 +117,7 @@ function showSlides(className) {
     if(width1 < 401 || width2 < 401 || width3 < 401) {
         topFunction(500);
     }
-    else if(width1 < 751 || width2 < 751 || width < 751) {
+    else if(width1 < 751 || width2 < 751 || width3 < 751) {
         topFunction(260);
     } 
     //go back top first
