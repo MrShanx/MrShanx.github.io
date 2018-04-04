@@ -48,6 +48,8 @@ ul {
 }
 
 #div_logo {
+	            transition-duration: 0.5s;
+
     width: 48%;
     float: left;
     display: inline-block;
