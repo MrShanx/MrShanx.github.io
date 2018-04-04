@@ -14,12 +14,12 @@ html {
         border: 10px solid hotpink;
 }
 
-*/body {
+*/
+body {
     height: 100%;
-        margin: 0;
-        /*border: 10px solid blue;*/
-    font-family: 'Open Sans', sans-serif;
-    
+    margin: 0;
+    /*border: 10px solid blue;*/
+    font-family: 'Work Sans', sans-serif;    
 }
     
 header {
