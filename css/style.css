@@ -30,6 +30,7 @@ h3, h2 {
 a {
     color: white;
     text-decoration: none;
+    transition-duration: 0.5s;
 }
 
 a:hover, a:active {
