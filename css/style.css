@@ -23,6 +23,10 @@ body {
     color: white;
 }
 
+h1 {
+    transition-duration: 0.5s;
+}
+
 h3, h2 {  
     display: inline-block;
 }
@@ -205,49 +209,6 @@ ul {
     position: relative;
 }
 
-/*** .leftMenu left hand-side position *****************************************
-.leftMenu, .rightMenu {
-    display: inline-block;
-}
-.leftMenu {
-    background-color: white;
-    min-width: 150px;
-    position: absolute;     
-    
-    width: 15%;
-    height: 0%;
-    background-color: gray;
-    padding-bottom: 100%;
-    margin: 0%;
-    margin-top: 10%;
-    border-right: solid #2f2a2d 10px;
-        border-left: solid #2f2a2d 10px;
-
-}
-	.menuBtn {
-            display: inline-block;
-            width: 100px;
-            background-color: black;
-            display: inline-block;	
-        }   
-    
-.rightMenu {
-    min-width: 200px;
-    width: 85%;
-    margin: 0%;
-    margin-left: 15%;
-    border: solid #2f2a2d 10px;
-    border-left: none;
-}
-.slideShow {
-	padding-bottom: 3%;
-	background-color: gray;
-}
-
-.menuBtn {
-	position: relative;
-}
-/*.leftMenu left hand-side position end ***************************************/
 
 #div_mid_page {padding: 0; margin: 0;}
             .leftMenu, .rightMenu {
@@ -312,6 +273,7 @@ ul {
         @media (max-width:1010px) {
 /*            header*/
             #div_logo {
+		    transition-duration: 0.5s;
                 padding-left: 30px;
             }
             #div_navigation {
@@ -325,6 +287,9 @@ ul {
         }
         @media (max-width:910px) {
             /*header*/
+		#div_logo {
+			transition-duration: 0.5s;
+		}
             #div_logo, #div_navigation {
                 padding: 0px 0;        
             }
@@ -339,8 +304,12 @@ ul {
         @media (max-width:750px) {
             /*header*/
             h1 {
-               font-size-adjust: .4;
-            } 
+		    		    transition-duration: 0.5s;
+               font-size: 150%;
+            }
+		#div_logo {
+			transition-duration: 0.5s;
+		}
             #div_logo, #div_navigation {
                 display: inline-block;
                 padding: 0;
@@ -375,11 +344,16 @@ ul {
         @media (max-width:400px) {
             /*header*/
             body {
-                font-size-adjust: .5;
+		    		    transition-duration: 0.5s;
+                font-size: 90%;
             }
-            h1 {
-               font-size-adjust: .3;
+            h1 {   
+		    		    transition-duration: 0.5s;
+               font-size: 120%;
             }            
+		#div_logo {
+			transition-duration: 0.5s;
+		}
             #div_logo, #div_navigation {
                 padding-bottom: 0;
             }
@@ -404,7 +378,7 @@ ul {
                 margin-left: -23px;
             }
             #div_footer {
-                font-size-adjust: .6;
+                font-size: 85%;
             }
         }
 /*** RESPONSIVE LOGO and NAV **************************************************/
