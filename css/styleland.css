@@ -1,0 +1,239 @@
+
+
+body {
+    height: 100%;
+    margin: 0;
+    /*border: 10px solid blue;*/
+    font-family: 'Work Sans', sans-serif;   
+}
+    
+header {
+    background-image: url("../images/landing/coverImg.jpg");
+        /*background: url("coverImg.jpg");*/
+
+    height: 125vh;
+    background-size: cover;
+    color: white;
+    /*border: 10px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+        transition-duration: 0.5s;
+    font-weight: bolder;   
+    font-size: 300%;
+}
+h3{
+    font-size: 180%;
+}
+h5 {
+    font-size: 120%;
+}
+
+h1, h3, h5 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+a {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+
+.nav_link {
+    opacity: 0.5;
+}
+.nav_link:hover {
+    /*opacity: .3;*/
+    /*color: #6c63a2;*/
+    opacity: 1;
+}
+
+.nav_link p {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .7);
+        padding: 0 25% 5% 25%;
+        margin-bottom: 0;
+
+}
+.nav_link:hover p {
+        transition-duration: .5s;
+        opacity: 1;
+}
+
+.nav {
+    /*border: 10px solid red;*/
+    /*margin: 0 20%;*/
+    /*margin-bottom: 50px;*/
+    width: 100%;
+    min-height: 200px;
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.nav_link {
+        /*border: 10px solid blue;*/
+    display: inline-block;
+    /*width: 30%;*/
+    /*background-color: grey;*/
+    margin: 0;
+    padding: 0;
+    min-width: 33.13%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio {
+    background: url("../images/landing/coverImg.jpg");
+    /*background: url("coverImg.jpg");*/
+    background-size: 100%;
+}
+#about {
+    background: url("../images/landing/coverImg.jpg");
+        /*background: url("coverImg.jpg");*/
+
+    background-size: 100%;
+}
+#contact {
+    background: url("../images/landing/coverImg.jpg");
+        /*background: url("coverImg.jpg");*/
+
+    background-size: 100%;
+}
+
+
+.footer {
+    /*border: 10px solid green;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #2f2a2d;
+    text-align: center;
+    display: inline-block;
+}
+.footer_link {
+    display: inline-block;
+    min-width: 49.7%;
+    padding: auto;
+    /*background-color: #2f2a2d;*/
+    margin: 0;
+    height: 98px;
+    /*flex: 1;*/
+    padding-top: 30px;
+    cursor: default;
+}
+.footer_link:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+#cf img, #cf2 img {
+    transition-duration: 0.5s;
+}
+
+#cf img {
+    position: absolute;
+    left: 10%;
+}
+
+#cf2 img {
+    position: absolute;
+    left: 60%;
+}
+
+.footer_link h5 {
+    /*background-color: black;*/
+    padding-top: 0%;
+}
+.footer_link p {
+    margin-bottom: 0;
+    /*background-color: green;*/
+}
+
+
+#cf img.top:hover, #cf2 img.top:hover {
+    opacity: 0;
+        cursor: pointer;
+}
+
+.footer_link h5:hover {
+    transition-duration: 0.3s;
+    color: #6c63a2;
+        cursor: pointer;
+}
+
+
+
+@media (max-width: 950px) {
+    .footer_link {
+        min-width: 100%;
+        height: 98px;
+    }
+    #cf img {
+        position: absolute;
+        left: 20%;
+    }
+
+    #cf2 img {
+        position: absolute;
+        left: 20%;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 180%;
+    }
+    h5 {
+        visibility: hidden;
+    }
+    #cf img {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 41%;
+    }
+
+    #cf2 img {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 41%;
+    }
+    .nav p, .footer p {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 450px) {
+    #cf img {
+        position: absolute;
+        left: 39.5%;
+    }
+
+    #cf2 img {
+        position: absolute;
+        left: 39.5%;
+    }
+}
+
+@media (max-width: 380px) {
+    #cf img {
+        position: absolute;
+        left: 37%;
+    }
+
+    #cf2 img {
+        position: absolute;
+        left: 37%;
+    }
+}
