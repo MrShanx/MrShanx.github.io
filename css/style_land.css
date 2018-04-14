@@ -1,0 +1,118 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.hero-image {
+	/*opacity: 0.1;*/
+	background-color: rgba(0, 0, 0, .5);
+	background-image: url("coverImg4.jpg");
+	height: 42%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.content-container {
+	margin: 0 10%;
+	text-align: center;
+}
+
+.img-circle {
+	/*background-color: #FFFFF;*/
+	margin-bottom: 10px;
+	border-radius: 50%;
+	max-width: 100%;
+	width: 150px;
+	height: 150px;
+	min-width: 150px;
+	/*border: solid 10px rgba(85,36,0, .9);*/
+	/*border: solid 10px rgba(0,0,0, .5);*/
+}
+
+.img-no-padding {
+	padding: 0;
+}
+
+img {
+	vertical-align: middle;
+	padding: 0;
+	
+}
+
+.avatar {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -75%);
+}
+
+.name {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.description {
+	color: grey;
+	font-weight: bolder;
+}
+
+hr {
+	border-bottom: solid 3px blue;
+	width: 145px;
+	/*opacity: 0.7;*/
+}
+
+
+#card-content {
+	margin: 50px 0;
+}
+
+.card-links .card {
+	display: inline-block;
+	min-width: 150px;
+	color: black;
+	background-color: rgba(102, 108, 108, 0.1);
+	margin: 5px 0px;
+	padding: 0;
+}
+
+#git-card .card-img-top:hover , #git-card a:hover + .card-body {
+	background-color: black;
+	color: white;
+}
+
+#port-card .card-img-top:hover, #port-card a:hover + .card-body {
+	background-color: rgba(111,54,6,.9);
+	color: white;
+}
+
+#link-card .card-img-top:hover, #link-card a:hover + .card-body {
+	background-color: #007bff;
+	color: white;
+}
+
+#linked-img {
+	padding-left: 10px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.highlight-text:hover {
+	font-weight: bold;
+}
+
+.footer {
+	text-align: center;
+}
+
+.footer-nav ul li {
+	display: inline-block;
+}
+
+.footer-nav ul li a:hover {
+	text-decoration: none;
+	border-bottom: solid 1.5px black;
+}
