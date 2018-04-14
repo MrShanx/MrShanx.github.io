@@ -5,3 +5,5 @@
   <br/>
   <br/>
   <p>update: Mar 15, 2018 - added new landing page</p>
+  <br/>
+  <p>update: Apr 13, 2018 - updated landing page (<em>old one sucked</em>)</p>
