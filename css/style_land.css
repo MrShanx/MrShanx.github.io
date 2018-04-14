@@ -5,7 +5,7 @@ body, html {
 
 .hero-image {
 	background-color: rgba(0, 0, 0, .5);
-	background-image: url("coverImg4.jpg");
+	background-image: url("/images/coverImg4.jpg");
 	height: 42%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body, html {
 @media (max-width: 900px) {
 	.hero-image {
 		background-color: rgba(0, 0, 0, .5);
-		background-image: url("coverImg4Small.jpg");
+		background-image: url("/images/coverImg4Small.jpg");
 		height: 42%;
 		background-position: center;
 		background-repeat: no-repeat;
