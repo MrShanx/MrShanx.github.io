@@ -79,6 +79,10 @@ img {
 	transform: translate(-50%, -75%);
 }
 
+.title {
+	font-weight: bold;
+}
+
 .name {
 	margin-top: 100px;
 	margin-bottom: 50px;
