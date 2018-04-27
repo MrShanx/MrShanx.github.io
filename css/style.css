@@ -23,10 +23,6 @@ body {
     color: white;
 }
 
-h1 {
-    transition-duration: 0.5s;
-}
-
 h3, h2 {  
     display: inline-block;
 }
@@ -34,7 +30,6 @@ h3, h2 {
 a {
     color: white;
     text-decoration: none;
-    transition-duration: 0.5s;
 }
 
 a:hover, a:active {
@@ -52,8 +47,6 @@ ul {
 }
 
 #div_logo {
-	            transition-duration: 0.5s;
-
     width: 48%;
     float: left;
     display: inline-block;
@@ -245,35 +238,16 @@ ul {
                 /*** Project Images end ***************************************/
 /*.leftMenu & .rightMenu end **************************************************/
 
-.menuTxt {
-    visibility: hidden;
-    position: absolute;
-    /*left: 0;*/
-    margin-left: -55%;
-    text-align: center;
-    top: 45%;
-    width: 100%;
-    color: black;
-    font-weight: 200;
-    
-     /* transition effect. not necessary */
-        transition: opacity .2s, visibility .2s;
-}
-
 /***hover on portfolio menu img ***/
 .menuBtn button{ cursor: pointer; }
 .menuBtn:hover img { opacity: 0.5; }
-/***.menuBtn button:hover .menuTxt {
-    visibility: visible;
-    opacity: 1;
-}***/
+
 /*** PORTFOLIO PAGE END *******************************************************/
 
 /*** RESPONSIVE LOGO and NAV ***/
         @media (max-width:1010px) {
 /*            header*/
             #div_logo {
-		    transition-duration: 0.5s;
                 padding-left: 30px;
             }
             #div_navigation {
@@ -287,9 +261,6 @@ ul {
         }
         @media (max-width:910px) {
             /*header*/
-		#div_logo {
-			transition-duration: 0.5s;
-		}
             #div_logo, #div_navigation {
                 padding: 0px 0;        
             }
@@ -304,12 +275,8 @@ ul {
         @media (max-width:750px) {
             /*header*/
             h1 {
-		    		    transition-duration: 0.5s;
                font-size: 150%;
             }
-		#div_logo {
-			transition-duration: 0.5s;
-		}
             #div_logo, #div_navigation {
                 display: inline-block;
                 padding: 0;
@@ -344,16 +311,11 @@ ul {
         @media (max-width:400px) {
             /*header*/
             body {
-		    		    transition-duration: 0.5s;
                 font-size: 90%;
             }
             h1 {   
-		    		    transition-duration: 0.5s;
                font-size: 120%;
             }            
-		#div_logo {
-			transition-duration: 0.5s;
-		}
             #div_logo, #div_navigation {
                 padding-bottom: 0;
             }
