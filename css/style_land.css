@@ -3,6 +3,21 @@ body, html {
 	margin: 0;
 }
 
+.b {
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+.grow {
+	transition: all 0.5s ease;
+}
+
+.grow:hover {
+	-webkit-transform: scale(1.07); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+	    -ms-transform: scale(1.07); /* IE 9 */
+	        transform: scale(1.07); /* IE 10, Fx 16+, Op 12.1+ */ 
+}
+
 .hero-image {
 	background-color: rgba(0, 0, 0, .5);
 	background-image: url("/images/coverImg4.jpg");
@@ -11,7 +26,9 @@ body, html {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	box-shadow: 0px 5px 15px 5px black inset;
 }
+
 @media (max-width: 900px) {
 	.hero-image {
 		background-color: rgba(0, 0, 0, .5);
@@ -30,7 +47,6 @@ body, html {
 }
 
 .img-circle {
-	/*background-color: #FFFFF;*/
 	margin-bottom: 10px;
 	border-radius: 50%;
 	max-width: 100%;
@@ -38,27 +54,26 @@ body, html {
 	height: 150px;
     min-width: 150px;
 	
-	border-bottom: 2px solid white;
-        border-right: 2px solid white;
+	border-bottom: 1px solid white;
+    border-right: 1px solid white;
 	
 	-webkit-box-shadow: 5px 8px 6px 5px rgba(0,0,0,0.8);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-        -moz-box-shadow:    5px 8px 6px 5px rgba(0,0,0,0.8);  /* Firefox 3.5 - 3.6 */
-        box-shadow:         5px 8px 6px 5px rgba(0,0,0,0.8);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-  	                /*right bot blur spread color*/
+       -moz-box-shadow: 5px 8px 6px 5px rgba(0,0,0,0.8);  /* Firefox 3.5 - 3.6 */
+            box-shadow: 5px 8px 6px 5px rgba(0,0,0,0.8);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  	                   /*right bot blur spread color*/
 
 	-webkit-transition: all .3s ease-in-out;
-           -moz-transition: all .3s ease-in-out;
-             -o-transition: all .3s ease-in-out;
-                transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+         -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
 }
 
 .img-circle:hover {
 	border: none;
   	box-shadow:none;
-	-webkit-transform: scale(1.1);
-     	   -moz-transform: scale(1.1);
-             -o-transform: scale(1.1);
-	        transform: scale(1.1);
+  -webkit-transform: scale(1.1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: scale(1.1); /* IE 9 */
+          transform: scale(1.1); /* IE 10, Fx 16+, Op 12.1+ */
 }
 
 .img-no-padding {
@@ -68,7 +83,6 @@ body, html {
 img {
 	vertical-align: middle;
 	padding: 0;
-	
 }
 
 .avatar {
@@ -76,8 +90,76 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -75%);
+	 -webkit-transform: translate(-50%, -75%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+         -ms-transform: translate(-50%, -75%); /* IE 9 */
+       	     transform: translate(-50%, -75%); /* IE 10, Fx 16+, Op 12.1+ */
 }
+
+/* Style the links inside the sidenav */
+#mySidenav a {	
+	position: fixed;
+	right: -80px;
+	display: block;
+	z-index: 1;
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 124px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 19px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+        box-shadow: 0px 10px 15px black;
+}
+
+#mySidenav a:hover {
+    right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#projects_nav {
+    top: 30%;
+    background-color: #00d8ff; /* Red */
+}
+
+#github_nav {
+    top: 40%;
+    background-color: #333; /* github */
+}
+
+#linkedin_nav {
+    top: 50%;
+    background-color: #0077b5; /* linkedin blue */
+}
+
+#contact_nav {
+    top: 60%;
+    background-color: #D4B76A; /* envelope */
+}
+
+@media(max-width: 500px) {
+	#mySidenav a {
+		right: -80px;
+		opacity: 0.6;
+	}
+	#mySidenav a:hover {
+		opacity: 1;
+	}
+}
+
+@media(max-height: 500px) {
+	#projects_nav {
+    	top: 5%;
+	}
+	#github_nav {
+	    top: 30%;
+	}
+	#linkedin_nav {
+	    top: 55%;
+	}
+	#contact_nav {
+    	top: 80%;
+	}
+}
+/************ SIDE NAV********************/
 
 .title {
 	font-weight: bold;
@@ -93,12 +175,34 @@ img {
 	font-weight: bolder;
 }
 
-hr {
-	border-bottom: solid 3px blue;
-	width: 145px;
-	/*opacity: 0.7;*/
+#intro-card {
+	padding: 40px 35px;
+	min-width: 160px;
+	color: black;
+	opacity: 0.8;
+	background-color: rgba(102, 108, 108, 0.1);
+	margin: 10px 6px;
+
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  	   -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  			box-shadow: 3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
+#intro-card:hover {
+	opacity: 1;
+}
+
+hr, hr-small {
+	border-bottom: solid 3px blue;
+	width: 145px;
+	-webkit-box-shadow: 0px 5px 5px 1px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  	   -moz-box-shadow: 0px 5px 5px 1px #ccc;  /* Firefox 3.5 - 3.6 */
+  			box-shadow: 0px 5px 5px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.hr-small {
+	width: 75px;
+}
 
 #card-content {
 	margin: 50px 0;
@@ -106,47 +210,134 @@ hr {
 
 .card-links .card {
 	display: inline-block;
-	min-width: 150px;
+	/*min-width: 150px;*/
+	width: 290px;
 	color: black;
 	background-color: rgba(102, 108, 108, 0.1);
-	margin: 5px 0px;
+	margin: 10px 6px;
 	padding: 0;
+
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  	   -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  			box-shadow: 3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-#git-card .card-img-top:hover , #git-card a:hover + .card-body {
-	background-color: black;
+@media(max-width: 500px) {
+	.card-links .card {
+		width: 230px;
+	}
+}
+
+.card a {
+	text-decoration: none;
+	color: black;
+}
+
+.git-card--container:hover {
+	border: 3px solid black;
 	color: white;
+	border-radius: 3px;
+
+	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 475px 475px, 275px 275px, 175px 175px, 75px 75px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
-#port-card .card-img-top:hover, #port-card a:hover + .card-body {
-	background-color: rgba(111,54,6,.9);
+.app-card--container:hover {
+	border: 3px solid black;
 	color: white;
+	border-radius: 3px;
+
+	background:
+	linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
 }
 
-#link-card .card-img-top:hover, #link-card a:hover + .card-body {
-	background-color: #007bff;
-	color: white;
+.port-card--container:hover  {
+	border: 3px solid black;
+	color: black;
+	border-radius: 3px;
+
+	background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 25px 25px;
 }
 
-#linked-img {
-	padding-left: 10px;
-	padding-top: 25px;
-	padding-bottom: 25px;
+#app-img {
+	/*necessary to keep up card size with git and port cards*/
+	width: 155px;
+	margin-top: 8px;
 }
 
 .highlight-text:hover {
 	font-weight: bold;
 }
 
-.footer {
-	text-align: center;
+footer {
+	font-size: .8em;
+	margin-bottom: 10px;
 }
 
-.footer-nav ul li {
-	display: inline-block;
+.boot {
+	margin-top: -12px;
+	transition: all ease-in-out;
+}	
+
+.boot:hover {
+  -webkit-animation: wiggle 4s; /* Chr, Saf */
+          animation: wiggle 4s; /* IE >9, Fx >15, Op >12.0 */
 }
 
-.footer-nav ul li a:hover {
-	text-decoration: none;
-	border-bottom: solid 1.5px black;
+@-webkit-keyframes wiggle {
+	0% {
+		-webkit-transform: rotateZ(30deg);
+        	-ms-transform: rotateZ(30deg);
+        		transform: rotateZ(30deg);
+	}
+	50% {
+		-webkit-transform: rotateZ(-30deg);
+        	-ms-transform: rotateZ(-30deg);
+        		transform: rotateZ(-30deg);
+	}
+	100% {
+		-webkit-transform: rotateZ(-30deg);
+        	-ms-transform: rotateZ(-30deg);
+        		transform: rotateZ(-30deg);
+	}
+}
+
+@keyframes wiggle {
+	0% {
+		-webkit-transform: rotateZ(30deg);
+        	-ms-transform: rotateZ(30deg);
+        		transform: rotateZ(30deg);
+	}
+	50% {
+		-webkit-transform: rotateZ(-30deg);
+        	-ms-transform: rotateZ(-30deg);
+        		transform: rotateZ(-30deg);
+	}
+	100% {
+		-webkit-transform: rotateZ(-30deg);
+        	-ms-transform: rotateZ(-30deg);
+        		transform: rotateZ(-30deg);
+	}
+}
+
+@media (max-width: 580px) {
+    .credits {
+		font-size: .9em;
+	}
 }

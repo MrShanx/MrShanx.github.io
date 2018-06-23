@@ -1,0 +1,127 @@
+html, body {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.projects-container {
+	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 750px 750px, 450px 450px, 350px 350px, 1350px 1350px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	border: 20px solid black;
+}
+
+@media(max-width: 1000px) {
+	.projects-container {
+		border: 0;
+	}
+}
+
+.project-card {
+	position: relative;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	/*background-color: green;*/
+	/*border: 2px solid red;*/
+
+	transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+	opacity: 0.85;
+	-webkit-transform: scale(0.9); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: scale(0.9); /* IE 9 */
+            transform: scale(0.9); /* IE 10, Fx 16+, Op 12.1+ */
+}
+
+.project-card:hover .project-card--links {
+	visibility: visible;
+	opacity: 1;
+}
+
+@media(max-width: 768px) {
+	.project-card {
+		padding: 0;
+	}
+}
+
+.project-image {
+	width: 100%;
+	cursor: pointer;
+	/*background-color: green;*/
+	border: 5px white solid;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 4px grey;
+}
+
+@media(max-width: 1000px) {
+	.project-image {
+		padding: 0px;
+		margin-top: 35px;
+		margin-bottom: 40px;
+	}
+}
+
+@media(max-width: 768px) {
+	.project-image {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.project-card--links {
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0px;
+	left: 0;
+	bottom: 0px;
+    width: 100%;
+    visibility: hidden; /*can be transitioned unlike display*/
+       opacity: 0; /*tandem with visibility transition*/
+    padding-top: 30%;
+
+    transition: visibility 0s, opacity .3s ease-in-out;
+}
+
+@media(max-width: 500px) {
+	.project-card--links {
+		padding-top: 20%;
+	}
+	.project-card--links .project-card-description p {
+		display: none;
+	}
+}
+
+@media(max-width: 500px) {
+	.app-title {
+		font-size: 1.5em;
+	}
+}
+
+.project-card-description p {
+	font-size: 1.2em;
+}
+
+.both-links ul {
+	padding-left: 0; 
+	list-style-type:none;
+}
+
+.both-links ul li {
+	display: inline-block;
+	/*background-color: black;*/
+}
+
+.both-links ul li a {
+	text-decoration: none;
+	margin: 0 10px;
+	font-size: 1.3em;
+}
