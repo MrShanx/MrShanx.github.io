@@ -3,41 +3,235 @@ body, html {
 	margin: 0;
 }
 
-.b {
+/* 
+ * Style sidenav 
+ */
+.sidenav-button_container {
+	display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 65px;
+}
+
+.sidenav-button_container_bars {
+	position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+@media (max-width: 400px) {
+	.sidenav-button_container_bars {
+	    top: 10px;
+	    left: 0px;
+	    margin-left: -5px;
+    -webkit-transform: scale(.8); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+	    -ms-transform: scale(.8); /* IE 9 */
+	        transform: scale(.8); /* IE 10, Fx 16+, Op 12.1+ */
+	}
+}
+
+.sidenav-close-button_container {
+	display: inline-block;
+    cursor: pointer;
+    float: right;
+    transition: 0.6s;
+    padding: 10px 5px;
+}
+
+.sidenav-button_bar, .sidenav-close-button_bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 15px;
+    transition: .4s;
+}
+
+.sidenav-button_container_bars:hover > .sidenav-button_bar {
+	width: 40px;
+	height: 7px;
+	-webkit-transform: translate(-2.5px,-1px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: translate(-2.5px,-1px); /* IE 9 */
+            transform: translate(-2.5px,-1px); /* IE 10, Fx 16+, Op 12.1+ */
+}
+
+.sidenav-close-button_container:hover > .sidenav-close-button_bar {
+	background-color:  #f1f1f1;
+}
+
+.coffee-logo {
+	margin-top: 10px;
+	margin-left: -10px;
+	display: none;
+	-webkit-animation: wiggle 4s; /* Chr, Saf */
+            animation: wiggle 4s; /* IE >9, Fx >15, Op >12.0 */
+}
+
+@media(max-width: 400px) {
+	.coffee-logo {
+		margin-left: 0;
+	}
+}
+
+.App-menu-logo {
+	/*font-family: Georgia, Times, Times New Roman, serif;*/
+	font-size: 30px;
 	font-weight: bold;
-	opacity: 0.7;
+	line-height: 26.4px;
+	padding-top: 15px;
+	display: none;
 }
 
-.grow {
-	transition: all 0.5s ease;
+@media(max-width: 400px) {
+	.App-menu-logo {
+		display: none;
+	}
 }
 
-.grow:hover {
-	-webkit-transform: scale(1.07); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-	    -ms-transform: scale(1.07); /* IE 9 */
-	        transform: scale(1.07); /* IE 10, Fx 16+, Op 12.1+ */ 
+/* hover */
+.sidenav-button_container:hover {
+	background: rgba(0,0,0,0.9);
+}
+.sidenav-button_container:hover > .App-menu-logo {
+	color: white;
+}
+.sidenav-button_container:hover .sidenav-button_container_bars .sidenav-button_bar {
+	background-color: white;
+}
+/* active */
+.sidenav-button_container:active {
+	background: rgba(0,0,0,0.9);
+}
+.sidenav-button_container:active > .App-menu-logo {
+	color: white;
+}
+.sidenav-button_container:active .sidenav-button_container_bars .sidenav-button_bar {
+	background-color: white;
+}
+/* focus */
+.sidenav-button_container:focus {
+	background: rgba(0,0,0,0.9);
+}
+.sidenav-button_container:focus > .App-menu-logo {
+	color: white;
+}
+.sidenav-button_container:focus .sidenav-button_container_bars .sidenav-button_bar {
+	background-color: white;
+}
+
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    /*background-color: #111; /* Black*/
+    background-color: rgba(0,0,0,0.5);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+@media(max-height: 300px) {
+	.sidenav {
+		/*background-color: rgba(0,0,255,0.5);*/
+	}
+	.sidenav-links-container {
+		overflow: scroll;
+	}
+}
+.sidenav-links-container {
+	background-color: #111; /* Black */
+	width: 250px;
+	height: 100%;
+}
+
+.sidenav-links-container_inner {
+	padding-top: 40px;
+}
+
+/* The navigation menu links */
+.nav-icon {
+	width: 25px;
+	margin-right: 10px;
+}
+
+.linkedin-icon {
+	margin-left: 2px;
+	margin-right: 8px;
+}
+
+#home_nav img {
+	width: 30px;
+	margin-left: -2px;
+}
+
+#home_nav {
+	color: white;
+	font-weight: bold;
+	cursor: default;
+}
+
+#contact_nav img {
+	width: 24px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav-close-button_container, .sidenav-button_container, .sidenav {
+    	padding-top: 15px;
+    }
+    .sidenav-button_container_bars {
+    	top: 20px;
+    }
+    .nav-icon {
+    	width: 25px;
+    }
+    .sidenav a {
+    	font-size: 18px;
+    }
+} 
+/************ SIDE NAV********************/
+
+/*
+ * main - whole app except menu
+ */
+#main {
+	width: 100%;
+	height: 100%;
 }
 
 .hero-image {
 	background-color: rgba(0, 0, 0, .5);
 	background-image: url("/images/coverImg4.jpg");
-	height: 42%;
+	height: 300px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
 	box-shadow: 0px 5px 15px 5px black inset;
+	z-index: -1;
 }
 
 @media (max-width: 900px) {
 	.hero-image {
-		background-color: rgba(0, 0, 0, .5);
 		background-image: url("/images/coverImg4Small.jpg");
-		height: 42%;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
 	}
 }
 
@@ -53,7 +247,6 @@ body, html {
 	width: 150px;
 	height: 150px;
     min-width: 150px;
-	
 	border-bottom: 1px solid white;
     border-right: 1px solid white;
 	
@@ -88,78 +281,12 @@ img {
 .avatar {
 	text-align: center;
 	position: absolute;
-	top: 50%;
+	top: 300px;
 	left: 50%;
-	 -webkit-transform: translate(-50%, -75%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-         -ms-transform: translate(-50%, -75%); /* IE 9 */
-       	     transform: translate(-50%, -75%); /* IE 10, Fx 16+, Op 12.1+ */
+	 -webkit-transform: translate(-50%, -40%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+         -ms-transform: translate(-50%, -40%); /* IE 9 */
+       	     transform: translate(-50%, -40%); /* IE 10, Fx 16+, Op 12.1+ */
 }
-
-/* Style the links inside the sidenav */
-#mySidenav a {	
-	position: fixed;
-	right: -80px;
-	display: block;
-	z-index: 1;
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 124px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 19px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
-        box-shadow: 0px 10px 15px black;
-}
-
-#mySidenav a:hover {
-    right: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-#projects_nav {
-    top: 30%;
-    background-color: #00d8ff; /* Red */
-}
-
-#github_nav {
-    top: 40%;
-    background-color: #333; /* github */
-}
-
-#linkedin_nav {
-    top: 50%;
-    background-color: #0077b5; /* linkedin blue */
-}
-
-#contact_nav {
-    top: 60%;
-    background-color: #D4B76A; /* envelope */
-}
-
-@media(max-width: 500px) {
-	#mySidenav a {
-		right: -80px;
-		opacity: 0.6;
-	}
-	#mySidenav a:hover {
-		opacity: 1;
-	}
-}
-
-@media(max-height: 500px) {
-	#projects_nav {
-    	top: 5%;
-	}
-	#github_nav {
-	    top: 30%;
-	}
-	#linkedin_nav {
-	    top: 55%;
-	}
-	#contact_nav {
-    	top: 80%;
-	}
-}
-/************ SIDE NAV********************/
 
 .title {
 	font-weight: bold;
@@ -224,7 +351,7 @@ hr, hr-small {
 
 @media(max-width: 500px) {
 	.card-links .card {
-		width: 230px;
+		width: 180px;
 	}
 }
 
@@ -290,14 +417,50 @@ footer {
 	margin-bottom: 10px;
 }
 
-.boot {
-	margin-top: -12px;
-	transition: all ease-in-out;
+.heart {
+	width: 28px;
+	cursor: pointer;
 }	
 
-.boot:hover {
-  -webkit-animation: wiggle 4s; /* Chr, Saf */
-          animation: wiggle 4s; /* IE >9, Fx >15, Op >12.0 */
+.heart:hover {
+  -webkit-animation: beat 1s; /* Chr, Saf */
+          animation: beat 1s; /* IE >9, Fx >15, Op >12.0 */
+}
+
+@-webkit-keyframes beat {
+	0% {
+		-webkit-transform: rotateZ(30deg);
+        	-ms-transform: rotateZ(30deg);
+        		transform: rotateZ(30deg);
+	}
+	50% {
+		-webkit-transform: rotateZ(-30deg);
+        	-ms-transform: rotateZ(-30deg);
+        		transform: rotateZ(-30deg);
+	}
+	100% {
+		-webkit-transform: rotateZ(-30deg);
+        	-ms-transform: rotateZ(-30deg);
+        		transform: rotateZ(-30deg);
+	}
+}
+
+@keyframes beat {
+	0% {
+		width: 28px;
+	}
+	25% {
+		width: 20px;
+	}
+	50% {
+		width: 28px;
+	}
+	75% {
+		width: 20px;
+	}
+	100% {
+		width: 28px;
+	}
 }
 
 @-webkit-keyframes wiggle {
@@ -341,3 +504,73 @@ footer {
 		font-size: .9em;
 	}
 }
+
+/*
+ * CSS TOGGLES
+ */
+
+.b {
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+.grow {
+	transition: all 0.5s ease;
+}
+
+.grow:hover {
+	-webkit-transform: scale(1.07); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+	    -ms-transform: scale(1.07); /* IE 9 */
+	        transform: scale(1.07); /* IE 10, Fx 16+, Op 12.1+ */ 
+}
+
+/*
+ * Toggles for menu
+ */
+
+.sticky-menu_pastImage {
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	-webkit-box-shadow: 3px 3px 5px 6px gray;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  	   -moz-box-shadow: 3px 3px 5px 6px gray;  /* Firefox 3.5 - 3.6 */
+  			box-shadow: 3px 3px 5px 4px gray;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	background-color: white;
+}
+
+.open-nav {
+	width: 100%;
+}
+
+.show-logo {
+	display: inline-block;
+}
+
+.remove-button {
+	display: none;
+}
+
+.dim-images {
+	opacity: 0.4;
+}
+
+/*
+ * Turn burger icon into close icon
+ */
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+            transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+            transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/****** Toggles for menu ******/

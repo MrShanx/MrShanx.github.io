@@ -36,21 +36,72 @@
     <link rel="shortcut icon" href="https://avatars0.githubusercontent.com/u/36684257?s=400&v=4">
   </head>
   <body>
+    <div class="App-menu">
+      <div class="sidenav-button_container">
+        <div class="sidenav-button_container_bars animated slideInLeft">
+          <div class="sidenav-button_bar"></div>
+          <div class="sidenav-button_bar"></div>
+          <div class="sidenav-button_bar"></div>
+        </div>
+        <img 
+          class="coffee-logo" 
+          src="/images/boot.png" 
+          width="35px" 
+          height="35px" /> 
+        <div class="App-menu-logo animated slideInDown">Emmanuel Talan</div>
+      </div>
+      <div id="mySideNav" class="sidenav">
+        <div class="sidenav-links-container">
+          <div class="sidenav-close-button_container grow">
+            <div class="sidenav-close-button_bar bar1"></div>
+            <div class="sidenav-close-button_bar bar2"></div>
+            <div class="sidenav-close-button_bar bar3"></div>
+          </div>
+          <div class="sidenav-links-container_inner">
+            <a href="#" id="home_nav">
+              <img 
+                class="nav-icon" 
+                src="/favicons/home.png" 
+                width="" 
+                height="" />Home</a>
+            <a href="web_portfolio.html" id="projects_nav">
+              <img 
+                class="nav-icon" 
+                src="/favicons/react.png" 
+                width="" 
+                height="" />Web Apps</a>
+            <a href="https://www.github.com/mrshanx" id="github_nav">
+              <img 
+                class="nav-icon" 
+                src="/favicons/github.png" 
+                width="" 
+                height="" />GitHub</a>
+            <a href="https://www.linkedin.com/in/emmanueltalan" id="linkedin_nav">
+              <img 
+                class="nav-icon linkedin-icon" 
+                src="/favicons/linkedin.png" 
+                width="" 
+                height="" />Linkedin</a>
+            <a href="mailto:talan.emmanuel.dev@gmail.com" id="contact_nav">
+              <img 
+                class="nav-icon" 
+                src="/favicons/email.png" 
+                width="" 
+                height="" />Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
     	<div class="hero-image"></div>
     	<div class="content-container">
     		<div class="avatar">
     			<img class="img-circle img-no-padding img-responsive" src="/images/prof_150.png" alt="Circle Image">
     		</div>
-        <div id="mySidenav" class="sidenav">
-          <a href="web_portfolio.html" id="projects_nav">Web Apps</a>
-          <a href="https://www.github.com/mrshanx" id="github_nav">GitHub</a>
-          <a href="https://www.linkedin.com/in/emmanueltalan" id="linkedin_nav">Linkedin</a>
-          <a href="mailto:talan.emmanuel.dev@gmail.com" id="contact_nav">Contact</a>
-        </div> 
     		<div class="name">
     			<h4 class="title">Emmanuel Talan</h4>
     			<br>
-    			<h6 class="description animated slideInLeft">Software Developer</h6>
+    			<h6 class="description">Software Developer</h6>
     		</div>
     		<div class="row">
           <div class="col-md-6 ml-auto mr-auto text-center">
@@ -143,27 +194,29 @@
           </div>
         </div> 
     	</div>
-		<footer class="footer section-dark">
-      <div class="container">
-        <div class="row">
-          <div class="credits m-auto animated slideInRight">
-            <span class="copyright"> © 
-              <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
-              <script>document.write(new Date().getFullYear())</script> 
-                made with 
-                  <img 
-                    class="boot" 
-                    src="/images/boot.png" 
-                    width="25px" 
-                    height="25px" /> 
-                  by 
-                  <span class="footer-name">Emmanuel Talan</span>
-            </span>
+  		<footer class="footer section-dark">
+        <div class="container">
+          <div class="row">
+            <div class="credits m-auto">
+              <span class="copyright"> © 
+                <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+                <script>document.write(new Date().getFullYear())</script> 
+                  made with 
+                    <img 
+                      class="heart" 
+                      src="/images/heart.png" 
+                      width="" 
+                      height="" /> 
+                    by 
+                    <span class="footer-name">Emmanuel Talan</span>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-		</footer>
+  		</footer>
+    </div>
 		
+    <!-- my JS -->
     <script src="/script/index.js" type="text/javascript"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

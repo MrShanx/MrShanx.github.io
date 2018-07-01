@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Web Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="/css/style_land.css">
 	<link rel="stylesheet" type="text/css" href="/css/web_portfolio.css">
 	<link rel="shortcut icon" href="/favicons/portfoliofavicon.png">
 
@@ -16,7 +17,62 @@
 </head>
 <body>
 	<div class="projects-container">
+		<div class="App-menu">
+	      <div class="sidenav-button_container">
+	        <div class="sidenav-button_container_bars animated slideInLeft">
+	          <div class="sidenav-button_bar"></div>
+	          <div class="sidenav-button_bar"></div>
+	          <div class="sidenav-button_bar"></div>
+	        </div>
+	        <div class="App-menu-logo animated slideInDown">
+	        	Portfolio
+	        </div>
+	      </div>
+	      <div id="mySideNav" class="sidenav">
+	        <div class="sidenav-links-container">
+	          <div class="sidenav-close-button_container grow">
+	            <div class="sidenav-close-button_bar bar1"></div>
+	            <div class="sidenav-close-button_bar bar2"></div>
+	            <div class="sidenav-close-button_bar bar3"></div>
+	          </div>
+	          <div class="sidenav-links-container_inner">
+	          	<a href="index.html" id="home_nav">
+	              <img 
+	                class="nav-icon" 
+	                src="/favicons/home.png" 
+	                width="" 
+	                height="" />Home</a>
+	            <a href="#" id="projects_nav">
+	              <img 
+	                class="nav-icon" 
+	                src="/favicons/react.png" 
+	                width="" 
+	                height="" />Web Apps</a>
+	            <a href="https://www.github.com/mrshanx" id="github_nav">
+	              <img 
+	                class="nav-icon" 
+	                src="/favicons/github.png" 
+	                width="" 
+	                height="" />GitHub</a>
+	            <a href="https://www.linkedin.com/in/emmanueltalan" id="linkedin_nav">
+	              <img 
+	                class="nav-icon linkedin-icon" 
+	                src="/favicons/linkedin.png" 
+	                width="" 
+	                height="" />Linkedin</a>
+	            <a href="mailto:talan.emmanuel.dev@gmail.com" id="contact_nav">
+	              <img 
+	                class="nav-icon" 
+	                src="/favicons/email.png" 
+	                width="" 
+	                height="" />Contact</a>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
 		<div class="row">
+			<div class="stars"></div>
+			<div class="twinkling"></div>
 			<div class="project-card col-sm-12 col-md-6 col-xlg-4">
 				<div class="project-card--linksimage">
 					<img class="project-image" src="/images/web_projects_images/face_recognition.jpg" alt="face recognition" />
@@ -127,5 +183,6 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="/script/index.js"></script>
 </body>
 </html>
