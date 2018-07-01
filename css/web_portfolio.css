@@ -6,7 +6,6 @@ html, body {
     overflow-x: hidden; 
 }
 
-<<<<<<< HEAD
 .sidenav-button_container {
 	top: 0;
 	width: 100%;
@@ -130,8 +129,6 @@ html, body {
 }
 /************Background************/
 
-=======
->>>>>>> b89515ca938ef785737311b648ba609e0e35e019
 @media(max-width: 1000px) {
 	.projects-container {
 		border: 0;
@@ -149,11 +146,7 @@ html, body {
 	padding: 10px;
 	/*background-color: green;*/
 	/*border: 2px solid red;*/
-<<<<<<< HEAD
 	/*z-index: -1;*/
-=======
-	z-index: 3;
->>>>>>> b89515ca938ef785737311b648ba609e0e35e019
 	transition: all 0.3s ease-in-out;
 }
 

@@ -125,7 +125,7 @@ body, html {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 1000; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     /*background-color: #111; /* Black*/
@@ -505,11 +505,6 @@ footer {
 	}
 }
 
-/*
-<<<<<<< HEAD
- * CSS TOGGLES
- */
-
 .b {
 	font-weight: bold;
 	opacity: 0.7;
@@ -575,7 +570,7 @@ footer {
             transform: rotate(45deg) translate(-8px, -8px) ;
 }
 /****** Toggles for menu ******/
-=======
+/*
  * Background
  * From: https://codepen.io/WebSonick/pen/vjmgu;
  */
@@ -625,4 +620,3 @@ footer {
   animation:move-twink-back 200s linear infinite;
 }
 /************Background************/
->>>>>>> b89515ca938ef785737311b648ba609e0e35e019
