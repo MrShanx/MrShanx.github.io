@@ -201,10 +201,10 @@ body, html {
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav-close-button_container, .sidenav-button_container, .sidenav {
-    	padding-top: 15px;
+    	/*padding-top: 15px;*/
     }
     .sidenav-button_container_bars {
-    	top: 20px;
+    	/*top: 20px;*/
     }
     .nav-icon {
     	width: 25px;
