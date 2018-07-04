@@ -68,18 +68,6 @@ html, body {
 	width: 24px;
 }
 
-.projects-container {
-	/*background-color:black;
-	background-image:
-	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-	background-size: 750px 750px, 450px 450px, 350px 350px, 1350px 1350px; 
-	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-	border: 20px solid black;*/
-}
-
 /*
  * Background
  * From: https://codepen.io/WebSonick/pen/vjmgu;
@@ -277,12 +265,12 @@ html, body {
 }
 
 .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  background:#000 url(/images/stars.png) repeat top center;
   z-index:-3;
 }
 
 .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  background:transparent url(/images/twinkling.png) repeat top center;
   z-index:-2;
 
   -moz-animation:move-twink-back 200s linear infinite;

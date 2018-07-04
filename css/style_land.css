@@ -12,18 +12,18 @@ body, html {
     position: fixed;
     top: 0px;
     left: 0px;
-    height: 65px;
+    height: 45px;
 }
 
 .sidenav-button_container_bars {
 	position: fixed;
-    top: 10px;
+    top: 5px;
     left: 10px;
     cursor: pointer;
 }
 @media (max-width: 400px) {
 	.sidenav-button_container_bars {
-	    top: 10px;
+	    top: 5px;
 	    left: 0px;
 	    margin-left: -5px;
     -webkit-transform: scale(.8); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
@@ -56,12 +56,18 @@ body, html {
             transform: translate(-2.5px,-1px); /* IE 10, Fx 16+, Op 12.1+ */
 }
 
+@media(max-width: 400px) {
+	.sidenav-button_bar {
+		margin: 6px 10px;
+	}
+}
+
 .sidenav-close-button_container:hover > .sidenav-close-button_bar {
 	background-color:  #f1f1f1;
 }
 
 .coffee-logo {
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-left: -10px;
 	display: none;
 	-webkit-animation: wiggle 4s; /* Chr, Saf */
@@ -70,7 +76,7 @@ body, html {
 
 @media(max-width: 400px) {
 	.coffee-logo {
-		margin-left: 0;
+		display: none;
 	}
 }
 
@@ -79,13 +85,13 @@ body, html {
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 26.4px;
-	padding-top: 15px;
+	padding-top: 10px;
 	display: none;
 }
 
 @media(max-width: 400px) {
 	.App-menu-logo {
-		display: none;
+		font-size: 25px;
 	}
 }
 
@@ -603,14 +609,14 @@ footer {
 }
 
 #git-card:hover > .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  background:#000 url(/images/stars.png) repeat top center;
   z-index: -2;
     border: 3px solid black;
   border-radius: 3px;
 }
 
 #git-card:hover > .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  background:transparent url(/images/twinkling.png) repeat top center;
   z-index: -1;
 
   -moz-animation:move-twink-back 200s linear infinite;

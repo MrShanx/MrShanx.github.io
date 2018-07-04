@@ -35,20 +35,25 @@ function closeMenu() {
 }
 
 function changeStickyMenu() {
+	var window_width = window.innerWidth;
+	
 	//past image
-	if (document.body.scrollTop > 290 || 
-			document.documentElement.scrollTop > 290) {
+	if ((document.body.scrollTop > 290 || 
+			document.documentElement.scrollTop > 290)) {
 		navbar.classList.add("sticky-menu_pastImage");
-		coffee_logo.classList.add("show-logo");
+		if(window_width > 400) {
+			coffee_logo.classList.add("show-logo");
+		} else {
+			coffee_logo.classList.remove("show-logo");
+		}
 	} else {
 		navbar.classList.remove("sticky-menu_pastImage");
 		coffee_logo.classList.remove("show-logo");
 	}
 
-	var window_width = window.innerWidth;
 	//past name
 	if ((document.body.scrollTop > 410 || 
-			document.documentElement.scrollTop > 410) && window_width > 400) {
+			document.documentElement.scrollTop > 410)) {
 		logo.classList.add("show-logo");
 	} else {
 		logo.classList.remove("show-logo");
