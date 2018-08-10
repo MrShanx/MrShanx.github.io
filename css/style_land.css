@@ -13,6 +13,8 @@ body, html {
     top: 0px;
     left: 0px;
     height: 45px;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
 }
 
 .sidenav-button_container_bars {
@@ -43,7 +45,7 @@ body, html {
 .sidenav-button_bar, .sidenav-close-button_bar {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: white;
     margin: 6px 15px;
     transition: .4s;
 }
@@ -534,10 +536,9 @@ footer {
 	top: 0;
 	width: 100%;
 	z-index: 1000;
-	-webkit-box-shadow: 3px 3px 5px 6px gray;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  	   -moz-box-shadow: 3px 3px 5px 6px gray;  /* Firefox 3.5 - 3.6 */
-  			box-shadow: 3px 3px 5px 4px gray;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-	background-color: white;
+	-webkit-box-shadow: 0px 0px 5px 2px black;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  	   -moz-box-shadow: 0px 0px 5px 2px black;  /* Firefox 3.5 - 3.6 */
+  			box-shadow: 0px 0px 5px 2px black;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 .open-nav {
